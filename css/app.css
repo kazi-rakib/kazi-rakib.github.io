@@ -193,3 +193,8 @@ footer {
     width: 1px;
     white-space: nowrap;
 }
+
+/*** warning class attributes ***/
+.warning {
+    color: #cc0000;
+}
