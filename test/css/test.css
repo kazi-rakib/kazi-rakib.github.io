@@ -1,0 +1,20 @@
+* {
+    /* background: #808080; */
+}
+
+body {
+    color: #a52a2a;
+}
+
+div, p, h1, h2, h3, img {
+    background: #deb887;
+    border: 2px #000000 solid;
+    padding: 15px;
+    margin: 10px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    /* display: block; */
+}
