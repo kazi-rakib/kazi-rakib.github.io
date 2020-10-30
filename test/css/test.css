@@ -1,20 +1,75 @@
-* {
-    /* background: #808080; */
+* {   
+    overflow: auto;
 }
 
 body {
     color: #a52a2a;
+    background: #808080;
+
+    margin: 30px;
 }
 
-div, p, h1, h2, h3, img {
+div, p, h1, h2, h3 {
     background: #deb887;
     border: 2px #000000 solid;
     padding: 15px;
     margin: 10px;
 }
 
-img {
+p img {
     width: 200px;
     height: auto;
     /* display: block; */
+    float: left;
+
+    margin-right: 10px;
+}
+
+div.container p {
+    color: darkgoldenrod;
+    /* height: 150px; */
+}
+
+div.social-link {
+    color: #ffffff;
+    background: #ffffff;
+    border: 1px #808080 solid;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+    border: 0px;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+    position: fixed;
+    top: 400px;
+    left: 0px;
+}
+
+div.social-link a {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #0404a0;
+}
+a:visited {
+    text-decoration: none;
+    color: #040470;
+}
+a:hover {
+    text-decoration: none;
+    color: #d40404;
+    cursor: url("images/social-twitter.png"), default ;
+}
+
+h1 {
+    cursor: progress;
+}
+
+p {
+    cursor: help;
 }
