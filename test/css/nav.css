@@ -1,0 +1,56 @@
+* {
+    /* Universal area */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#nav {
+    background: #B2EBF2;
+    /* font: 700 25px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    height: 32px;
+}
+
+div#nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+div#nav ul li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    /* padding: 15px; */
+}
+
+ul li a {
+    text-decoration: none;
+    background: #0097A7;
+    color: #ffffff;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    /* display: block; */
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+}
+
+ul li a:hover {
+    background: #00BCD4;
+    color: #212121;
+    border-radius: 3px;
+}
