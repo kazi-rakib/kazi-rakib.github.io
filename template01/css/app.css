@@ -20,6 +20,10 @@ html {
 
 body {
     background-color: #fafbfc;
+    background: 
+      linear-gradient(
+        35deg, #CCFFFF, #FFCCCC
+      );
     color: #2e3d49;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
