@@ -7,11 +7,20 @@
     <title>Test</title>
     <style>
         body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10px;
             background: #272727;
             margin: 0;
             /* padding: 0px; */
+            font-size: 1.6em;
+            text-align: center;
         }
-
+        p {
+            text-align: justify;
+        }
+        main {
+            margin: auto;
+        }
         div.survey-form {
             background: #dd9;
             color: #333;
@@ -20,8 +29,11 @@
             margin: 20px auto;
             padding: 15px;
         }
-        @media screen {
-            max-width: 90%;
+        @media (max-height: 560px) {
+            main {
+                background: red;
+                max-width: 95vw;
+            }
         }
 
     </style>
@@ -31,12 +43,14 @@
 </head>
 
 <body>
+<main>
     <div class="survey-form">
         <h1>Test Document</h1>
         <p class="headline">
             This is a test page meant to investigate various aspect of an element.
         </p>
     </div>
+</main>
 </body>
 
 </html>
