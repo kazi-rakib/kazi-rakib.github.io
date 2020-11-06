@@ -3,7 +3,7 @@
 
 :root {
     --background-color: #272727;
-    --primary-color: #dd9;
+    --primary-color: #dd8;
     --text-color: #555;
     --accent-color: hsla(241, 100%, 81%, 1);
 }
@@ -11,6 +11,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 10px;
+    font-weight: 400;
     background: rgba(0, 0, 255, 0.3);
     background: var(--background-color);
     margin: 0;
@@ -18,8 +19,10 @@ body {
     font-size: 1.6em;
     text-align: center;
 }
-p {
-    /* text-align: justify; */
+.headline {
+    color: #000;
+    color: var(--background-color);
+    font-weight: 500;
 }
 h1 {
     color: hsla(241, 100%, 81%, 1);
@@ -35,8 +38,8 @@ div.survey-form {
     background: var(--primary-color);
     color: #555;
     color: var(--text-color);
-
-    max-width: 50%;
+    font-weight: 400;
+    max-width: 60%;
     margin: 5px auto 20px auto;
     padding: 15px;
     border-radius: 5px;
