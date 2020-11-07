@@ -19,20 +19,21 @@
     max-width: 90vw;
   }
   #list li {
-    margin: 1.6rem;
-    padding: 1.6rem 1rem;
+    margin: 1.0rem 0;
+    padding: 1.0rem 0.5rem;
     /* max-width: 70vw; */
     background: #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 #333;
     text-align: left;
+    overflow: hidden;
   }
 
   #list span {
     color: #333;
     background: #eee;
-    padding: .5rem;
-    margin-right: 1rem;
+    padding: 0 .5rem;
+    margin-right: 0.5rem;
   }
   #list span.mag {
     color: #f40000;
@@ -41,7 +42,10 @@
     border-radius: 50%;
     margin-right: 2rem;
   }
-
+ #list span.time {
+  color: lightblue;
+  display: none;
+ }
 </style>
 
 </head>
