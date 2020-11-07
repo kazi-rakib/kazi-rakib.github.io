@@ -23,12 +23,14 @@ body {
     color: #000;
     color: var(--background-color);
     font-weight: 500;
+    /* margin-top: 0; */
 }
 h1 {
     color: hsla(241, 100%, 81%, 1);
     color: var(--accent-color);
     font-family: 'Lobster', cursive;
     border-radius: 5px;
+    /* margin-bottom: 0; */
 }
 main {
     margin: 0 auto;

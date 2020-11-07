@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Test Page</title>
+<style>
+  body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  #list {
+
+    padding: 0;
+    margin: 0 auto;
+    /* text-align: center; */
+    max-width: 90vw;
+  }
+  #list li {
+    margin: 1.6rem;
+    padding: 1.6rem 1rem;
+    /* max-width: 70vw; */
+    background: #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 #333;
+    text-align: left;
+  }
+
+  #list span {
+    color: #333;
+    background: #eee;
+    padding: .5rem;
+    margin-right: 1rem;
+  }
+  #list span.mag {
+    color: #f40000;
+    background: #444;
+    padding: .5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+
+</style>
+
+</head>
+<body>
+  <h1>JSON Parse</h1>
+  <ol id="list">
+    
+  </ol>
+  
+  <script>
+
+    // let data = {
+    //   Name: "Steve",
+    //   age: 24
+    // }
+    // console.log(data);
+
+    fetch('data.json')
+      .then((resp) => resp.json() )
+      .then((json) => {
+        console.log(json)
+      })
+
+    fetch('http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-31&minmag=6&limit=100')
+      .then((resp) => resp.json() )
+      .then((json) => {
+        console.log(json.features[0].properties.place)
+        console.log(json.features[1].properties.place)
+        console.log(json.features[2].properties.place)
+        console.log(json.features[3].properties.place)
+        console.log(json.features[4].properties.place)
+
+        var eq_features = json.features;
+        var output="";
+        for(var i=0; i < eq_features.length; i++){
+          output += "<li>" 
+            + ' <span class="mag"> ' + eq_features[i].properties.mag 
+            + ' </span><span class="place"> ' + eq_features[i].properties.place 
+            + ' </span><span class="time"> ' + eq_features[i].properties.time 
+            + ' </span> ' + "</li>";
+        }
+        console.log("LOOP finished!")
+        document.getElementById("list").innerHTML = output;
+      })
+
+  </script>
+</body>
+</html>
