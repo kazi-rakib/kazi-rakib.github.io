@@ -65,7 +65,7 @@
         console.log(json)
       })
 
-    fetch('http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-31&minmag=6&limit=100')
+    fetch('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-31&minmag=6&limit=100')
       .then((resp) => resp.json() )
       .then((json) => {
         console.log(json.features[0].properties.place)
