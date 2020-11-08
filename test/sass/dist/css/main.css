@@ -55,7 +55,7 @@ h1 {
   }
 }
 
-.main .main__p {
+.main .main__p1, .main .main__p2 {
   font-weight: 400;
   font-size: 1.3rem;
   padding: 0.5rem;
@@ -63,7 +63,12 @@ h1 {
   border-radius: 5px;
 }
 
-.main .main__p:hover {
-  opacity: 0.8;
+.main .main__p1:hover, .main .main__p2:hover {
+  opacity: 0.7;
+}
+
+.main .main__p2:hover {
+  color: #ff652f;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=main.css.map */

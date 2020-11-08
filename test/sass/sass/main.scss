@@ -50,7 +50,7 @@ h1 {
     flex-direction: column;
   }
 
-  #{&}__p {
+  #{&}__p1 {
     font-weight: weight(regular);
     font-size: 1.3rem;
     padding: 0.5rem;
@@ -59,7 +59,15 @@ h1 {
 
     &:hover {
       // color: $accent-color;
-      opacity: 0.8;
+      opacity: 0.7;
+    }
+  }
+  #{&}__p2 {
+    @extend .main__p1;
+
+    &:hover {
+      color: $accent-color;
+      opacity: 0.6;
     }
   }
 }
