@@ -27,11 +27,12 @@
         var eq_features = json.features;
         var output="";
         for(var i=0; i < eq_features.length; i++){
-          output += "<li>" 
-            + ' <span class="mag"> ' + eq_features[i].properties.mag 
-            + ' </span><span class="place"> ' + eq_features[i].properties.place 
-            + ' </span><span class="time"> ' + eq_features[i].properties.time 
-            + ' </span> ' + "</li>";
+          output +=
+              "<li>" 
+            + '<span class="mag"   > ' + eq_features[i].properties.mag    + ' </span>'
+            + '<span class="place" > ' + eq_features[i].properties.place  + ' </span>'
+            + '<span class="time"  > ' + eq_features[i].properties.time   + ' </span>'
+            + "</li>";
         }
         console.log("LOOP finished!")
         document.getElementById("list").innerHTML = output;
